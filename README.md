@@ -1,14 +1,15 @@
-Xbox-360-Controller-for-Python
-==============================
+# Xbox 360 Controller for Python
 
-Use an Xbox 360 Controller with Python on Windows
+The file `xinput.py` provides a Python interface for both Xbox 360 and Xbox One
+controllers on Windows. Xbox One controllers have been tested to work despite
+the name of the repository.
 
-A module for getting input from Microsoft XBox 360 controllers via the XInput library on Windows.
+Under the hood, it uses the 
+[XInput library](https://docs.microsoft.com/en-us/windows/desktop/xinput/getting-started-with-xinput)
+and was adapted from
+[Jason R. Coombs' code](http://pydoc.net/Python/jaraco.input/1.0.1/jaraco.input.win32.xinput/)
+under the MIT licence terms.
 
-Adapted from Jason R. Coombs' code here:
-http://pydoc.net/Python/jaraco.input/1.0.1/jaraco.input.win32.xinput/
-under the MIT licence terms
+The only dependency is Pyglet 1.2.4 or later. Install it by running:
 
-* Upgraded to Python 3
-* Modified to add deadzones, reduce noise, and support vibration
-* Only req is Pyglet ~1.2alpha1 or higher~ confirmed to work with 1.2.4 (latest): ```pip install pyglet``` 
+	pip install pyglet
